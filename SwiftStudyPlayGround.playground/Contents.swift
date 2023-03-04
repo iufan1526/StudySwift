@@ -52,4 +52,64 @@ for row in a..<b {
     row
 }
 
+//반복문------------------------------------------------------------------
+for row in 1...9 {
+    print("2 X \(row) = \(row * 2)")
+}
 
+for _ in 1...5 {
+    print("루프상수 생략가능합니다")
+}
+
+for num in 2...9 {
+    for num2 in 1...9 {
+        print("\(num) X \(num2) = \(num * num2)")
+    }
+}
+
+var n = 2
+
+while n < 1000 {
+    n *= 2
+}
+print(n)
+
+var i = 1024
+
+repeat {
+  i *= 2
+} while i < 1024
+print(i)
+
+//조건문------------------------------------------------------------------
+
+var adult = 19
+var age = 19
+
+if age >= adult {
+    print("성인 입니다.")
+}else {
+    print("미성년자 입니다.")
+}
+
+func divide(base : Int) {
+    
+    guard base != 0 else {
+        print("종료")
+        return
+    }
+    
+    print("정상실행")
+}
+
+var num = 2
+
+switch num {
+    
+    case 1 : print("1")
+    case 2 : print("2")
+    case 2 : print("두번째 2")
+    case 1 : print("1")
+    default : print("ss")
+    
+}
